@@ -6,15 +6,13 @@ var error = 0;
 var lost = 6;
 
 function getRandom(min, max){
-    var randNumber = Math.random() * (0 - min) + min,
-        randNumber = Math.ceil(randNumber);
-  return randNumber;
+    return Math.floor(Math.random() * (max - min + 1)) + min;
 }
 
 function setToZero() {
-    var userWord = ["", "", "", ""];
-    var wordWas = [""];
-    var reward = 0;
+    userWord = ["", "", "", ""];
+    wordWas = [""];
+    reward = 0;
 }
 
 function guessLetter(letter){
